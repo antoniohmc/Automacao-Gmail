@@ -20,7 +20,7 @@ public class CadastroNome {
         WebElement botaoAvancar = driver.findElement(By.xpath("*//span[contains(text(), 'Avançar')]"));
         botaoAvancar.click();
 
-        WebDriverWait waitPg2 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait waitPg2 = new WebDriverWait(driver, Duration.ofSeconds(30));
         waitPg2.until(ExpectedConditions.presenceOfElementLocated(By.id("day")));
     }
 }

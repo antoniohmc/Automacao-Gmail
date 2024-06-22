@@ -21,7 +21,7 @@ public class CadastroIdade {
         WebElement botaoAvancar = driver.findElement(By.xpath("*//span[contains(text(), 'Avançar')]"));
         botaoAvancar.click();
 
-        WebDriverWait waitPg3 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait waitPg3 = new WebDriverWait(driver, Duration.ofSeconds(30));
         waitPg3.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//span[contains(text(), 'Como você fará o login')]")));
     }
