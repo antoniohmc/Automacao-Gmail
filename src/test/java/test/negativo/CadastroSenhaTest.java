@@ -1,16 +1,17 @@
-package test;
+package test.negativo;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.CadastroEmail;
-import pages.CadastroIdade;
-import pages.CadastroNome;
-import pages.CadastroSenha;
+import pages.negativas.CadastroSenha;
+import pages.positivas.CadastroEmail;
+import pages.positivas.CadastroIdade;
+import pages.positivas.CadastroNome;
 
-public class CadastroNomeTest {
+public class CadastroSenhaTest {
+
     static WebDriver driver;
     static CadastroNome cadastroNome;
     static CadastroIdade cadastroIdade;
@@ -38,8 +39,6 @@ public class CadastroNomeTest {
 
         cadastroSenha = new CadastroSenha(driver);
         cadastroSenha.preencherCampo();
-
-
     }
 
 
