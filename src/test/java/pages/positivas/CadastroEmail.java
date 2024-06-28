@@ -18,11 +18,12 @@ public class CadastroEmail {
 
     public void preencherCampo() {
         WebElement name = driver.findElement(By.name("Username"));
-        name.sendKeys("henriquecampos01428");
+        name.sendKeys("henriquecampos0148");
 
         WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(), 'Avançar')]"));
         botaoAvancar.click();
-        WebDriverWait waitPg4 = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait waitPg4 = new WebDriverWait(driver, Duration.ofSeconds(30));
+
         waitPg4.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//span[contains(text(), 'Crie uma senha forte')]")));
 

@@ -14,14 +14,13 @@ public class CadastroSenha {
 
     public void preencherCampo() {
         WebElement name = driver.findElement(By.name("Passwd"));
-        name.sendKeys("henriquecampos0142811");
+        name.sendKeys("henriquecampos11");
 
         WebElement nameConfirm = driver.findElement(By.name("PasswdAgain"));
-        nameConfirm.sendKeys("henriquecampos0142811");
+        nameConfirm.sendKeys("henriquecampos11");
 
         WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(), 'Avançar')]"));
         botaoAvancar.click();
-
 
     }
 }
