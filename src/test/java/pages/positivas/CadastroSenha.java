@@ -13,14 +13,17 @@ public class CadastroSenha {
     }
 
     public void preencherCampo() {
-        WebElement name = driver.findElement(By.name("Passwd"));
-        name.sendKeys("henriquecampos11");
+        WebElement passwd = driver.findElement(By.name("Passwd"));
+        passwd.sendKeys("henriquecampos11");
 
-        WebElement nameConfirm = driver.findElement(By.name("PasswdAgain"));
-        nameConfirm.sendKeys("henriquecampos11");
+        WebElement passwdAgain = driver.findElement(By.name("PasswdAgain"));
+        passwdAgain.sendKeys("henriquecampos11");
 
         WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(), 'Avançar')]"));
         botaoAvancar.click();
+    }
 
+    public String ValidarMensagemGoogle() {
+        return driver.findElement(By.xpath("*//span[contains(text(),'Digite um número de telefone')]")).getText();
     }
 }

@@ -10,6 +10,8 @@ import pages.positivas.CadastroIdade;
 import pages.positivas.CadastroNome;
 import pages.positivas.CadastroSenha;
 
+import static org.junit.Assert.assertEquals;
+
 public class CadastroNomeTest {
     static WebDriver driver;
     static CadastroNome cadastroNome;
@@ -39,7 +41,9 @@ public class CadastroNomeTest {
         cadastroSenha = new CadastroSenha(driver);
         cadastroSenha.preencherCampo();
 
-
+        String mensagemEsperada = "Digite um número de telefone";
+        String mensagemAtual = cadastroSenha.ValidarMensagemGoogle();
+        assertEquals(mensagemEsperada, mensagemAtual);
     }
 
 

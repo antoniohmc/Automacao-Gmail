@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pages.negativas.CadastroNome;
 
+import static org.junit.Assert.assertEquals;
+
 
 public class CadastroNomeTest {
     static WebDriver driver;
@@ -24,6 +26,9 @@ public class CadastroNomeTest {
 
         cadastroNome = new CadastroNome(driver);
         cadastroNome.preencherCampo();
+        String mensagemEsperada = "Digite o nome";
+        String mensagemAtual = cadastroNome.ValidarMensagemGoogle();
+        assertEquals(mensagemEsperada, mensagemAtual);
     }
 
 

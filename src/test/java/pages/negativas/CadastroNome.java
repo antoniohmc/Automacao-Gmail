@@ -23,4 +23,8 @@ public class CadastroNome {
         WebDriverWait waitPg2 = new WebDriverWait(driver, Duration.ofSeconds(30));
         waitPg2.until(ExpectedConditions.presenceOfElementLocated(By.id("day")));
     }
+
+    public String ValidarMensagemGoogle() {
+        return driver.findElement(By.xpath("*//span[contains(text(),'Diite o nome')]")).getText();
+    }
 }

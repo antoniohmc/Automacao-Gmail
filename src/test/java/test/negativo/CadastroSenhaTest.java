@@ -39,6 +39,7 @@ public class CadastroSenhaTest {
 
         cadastroSenha = new CadastroSenha(driver);
         cadastroSenha.preencherCampo();
+
     }
 
 

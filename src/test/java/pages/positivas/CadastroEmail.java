@@ -22,7 +22,7 @@ public class CadastroEmail {
 
         WebElement botaoAvancar = driver.findElement(By.xpath("//span[contains(text(), 'Avançar')]"));
         botaoAvancar.click();
-        WebDriverWait waitPg4 = new WebDriverWait(driver, Duration.ofSeconds(30));
+        WebDriverWait waitPg4 = new WebDriverWait(driver, Duration.ofSeconds(50));
 
         waitPg4.until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//span[contains(text(), 'Crie uma senha forte')]")));
