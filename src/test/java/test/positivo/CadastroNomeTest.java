@@ -41,7 +41,7 @@ public class CadastroNomeTest {
         cadastroSenha = new CadastroSenha(driver);
         cadastroSenha.preencherCampo();
 
-        String mensagemEsperada = "Digite um número de telefone";
+        String mensagemEsperada = "Confirme que você não é um robô";
         String mensagemAtual = cadastroSenha.ValidarMensagemGoogle();
         assertEquals(mensagemEsperada, mensagemAtual);
     }

@@ -24,6 +24,6 @@ public class CadastroSenha {
     }
 
     public String ValidarMensagemGoogle() {
-        return driver.findElement(By.xpath("*//span[contains(text(),'Digite um número de telefone')]")).getText();
+        return driver.findElement(By.xpath("*//span[contains(text(),'Confirme que você não é um robô')]")).getText();
     }
 }
