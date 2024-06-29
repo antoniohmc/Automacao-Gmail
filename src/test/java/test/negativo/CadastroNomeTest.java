@@ -27,7 +27,7 @@ public class CadastroNomeTest {
         cadastroNome = new CadastroNome(driver);
         cadastroNome.preencherCampo();
         String mensagemEsperada = "Digite o nome";
-        String mensagemAtual = cadastroNome.ValidarMensagemGoogle();
+        String mensagemAtual = cadastroNome.validarMensagemGoogleNome();
         assertEquals(mensagemEsperada, mensagemAtual);
     }
 

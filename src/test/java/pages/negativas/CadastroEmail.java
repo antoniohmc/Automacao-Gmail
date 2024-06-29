@@ -26,4 +26,10 @@ public class CadastroEmail {
                 By.xpath("//span[contains(text(), 'Crie uma senha forte')]")));
 
     }
+
+    public String validarMensagemGoogleEmail() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'Digite um endereço do Gmail')]")));
+        return driver.findElement(By.xpath("//div[contains(text(),'Digite um endereço do Gmail')]")).getText();
+    }
 }

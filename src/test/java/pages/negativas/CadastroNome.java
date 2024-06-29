@@ -24,7 +24,7 @@ public class CadastroNome {
         waitPg2.until(ExpectedConditions.presenceOfElementLocated(By.id("day")));
     }
 
-    public String ValidarMensagemGoogle() {
-        return driver.findElement(By.xpath("*//span[contains(text(),'Diite o nome')]")).getText();
+    public String validarMensagemGoogleNome() {
+        return driver.findElement(By.xpath("//span[contains(text(),'Digite o nome')]")).getText();
     }
 }
